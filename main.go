@@ -6,7 +6,7 @@ import (
 
 	"strings"
 
-	_ "khairullah/migrations"
+	// _ "khairullah/migrations"
 
 	"github.com/pocketbase/pocketbase"
 	"github.com/pocketbase/pocketbase/apis"

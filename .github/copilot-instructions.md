@@ -6,7 +6,7 @@ This project is a jewelry inventory management system designed for efficient inv
 
 ## Core System
 * **User Roles**
-    * Admin: Single business owner with full access to system features, user management and all stores
+    * Admin (same PocketBase superuser): Single business owner with full access to system features, user management and all stores
     * User: Store staff with access limited to assigned stores and specific permissions
 * **Store Management**
     * Multi-store support for the single business owner
