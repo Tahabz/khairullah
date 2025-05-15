@@ -16,222 +16,96 @@ This document outlines the detailed step-by-step implementation plan for the jew
   - [ ] Create type-safe translation structure
   - [ ] Set up French as default language
   - [ ] Implement translation loader
-- [ ] Implement store management
-  - [ ] Create store collection in PocketBase
-  - [ ] Build store CRUD operations
-  - [ ] Implement store-user relationship
-- [ ] Create responsive layout system
+- [ ] Implement store management UI
+  - [ ] Build store CRUD operations UI
+  - [ ] Implement store-user relationship UI
+- [ ] Create responsive layout system UI
   - [ ] Build main application layout
   - [ ] Create responsive navigation
   - [ ] Implement dashboard templates
 
 ## Phase 2: Core Inventory Management
 
-### Basic Inventory Infrastructure
-- [ ] Create inventory data model
-  - [ ] Design jewelry item schema with all attributes
-  - [ ] Set up inventory history tracking
-  - [ ] Configure inventory-store relationships
-- [ ] Implement inventory listing and filtering
-  - [ ] Create inventory grid/list views
-  - [ ] Implement search and filter functionality
-  - [ ] Build inventory detail view
-
-### Advanced Inventory Features
-- [ ] Implement barcode system
-  - [ ] Integrate barcode generation library
-  - [ ] Build barcode scanning component
-  - [ ] Create label printing functionality
-- [ ] Build inventory item creation workflow
+### Inventory Listing and Management UI
+- [ ] Create inventory grid/list views
+- [ ] Implement search and filter functionality
+- [ ] Build inventory detail view
+- [ ] Build inventory item creation workflow UI
   - [ ] Create item entry form with validation
   - [ ] Implement file uploads for images
   - [ ] Build jewelry attributes form components
-
-### Price Calculation and Management
-- [ ] Implement price calculation system
-  - [ ] Build gold pricing calculator
-  - [ ] Create diamond multi-carat pricing
-  - [ ] Implement craftsmanship fee calculation
-- [ ] Create inventory update functionality
-  - [ ] Build item editing interface
-  - [ ] Implement history tracking for changes
-  - [ ] Create item deletion with proper safeguards
-
-### Supplier Management
-- [ ] Create supplier data model
-  - [ ] Design supplier schema
-  - [ ] Link suppliers to inventory items
-  - [ ] Build purchase history tracking
-- [ ] Implement supplier management UI
+- [ ] Implement barcode scanning component UI
+- [ ] Create label printing functionality UI
+- [ ] Build item editing interface UI
+- [ ] Create supplier management UI
   - [ ] Create supplier listing and details view
-  - [ ] Build supplier CRUD operations
-  - [ ] Implement supplier-inventory relationships
+  - [ ] Build supplier CRUD operations UI
 
 ## Phase 3: Sales and Client Management
 
-### Client Management
-- [ ] Create client data model
-  - [ ] Design client schema with all attributes
-  - [ ] Implement client preferences and history
-  - [ ] Set up client search functionality
-- [ ] Build client management interface
-  - [ ] Create client listing and details view
-  - [ ] Implement client CRUD operations
-  - [ ] Build client relationship tools
+### Client Management UI
+- [ ] Build client listing and details view
+- [ ] Implement client CRUD operations UI
+- [ ] Build client relationship tools UI
 
-### Sales Processing
-- [ ] Implement sales transaction system
-  - [ ] Create sales schema with all attributes
-  - [ ] Link sales to inventory items
-  - [ ] Build inventory update on sale
-- [ ] Build sales processing UI
-  - [ ] Create sales entry interface
-  - [ ] Implement item selection and pricing
-  - [ ] Build sales confirmation workflow
+### Sales Processing UI
+- [ ] Create sales entry interface
+- [ ] Implement item selection and pricing UI
+- [ ] Build sales confirmation workflow UI
 
-### Order and Shipping Management
-- [ ] Create order management system
-  - [ ] Design order schema with all attributes
-  - [ ] Implement shipping and delivery tracking
-  - [ ] Build pickup and delivery options
-- [ ] Implement order management UI
-  - [ ] Create order entry and tracking interface
-  - [ ] Build shipping status updates
-  - [ ] Implement special handling instructions
+### Order and Shipping Management UI
+- [ ] Create order entry and tracking interface
+- [ ] Build shipping status updates UI
+- [ ] Implement special handling instructions UI
 
-### Invoice Management
-- [ ] Implement invoice generation system
-  - [ ] Create invoice schema and templates
-  - [ ] Build PDF generation functionality
-  - [ ] Implement invoice history tracking
-- [ ] Build invoice management UI
-  - [ ] Create invoice list and detail views
-  - [ ] Implement invoice regeneration features
-  - [ ] Build invoice customization options
+### Invoice Management UI
+- [ ] Create invoice list and detail views
+- [ ] Implement invoice regeneration features UI
+- [ ] Build invoice customization options UI
 
-## Phase 4: Financial Management
+## Phase 4: Financial Management UI
 
-### Payment Processing
-- [ ] Implement payment tracking system
-  - [ ] Create payment schema for all payment types
-  - [ ] Build payment history tracking
-  - [ ] Implement partial payments and plans
-- [ ] Build payment management UI
-  - [ ] Create payment entry interface
-  - [ ] Implement payment receipt generation
-  - [ ] Build cheque management features
+### Payment Management UI
+- [ ] Create payment entry interface
+- [ ] Implement payment receipt generation UI
+- [ ] Build cheque management features UI
 
-### Expense Tracking
-- [ ] Create expense management system
-  - [ ] Design expense schema with categories
-  - [ ] Build expense tracking and history
-  - [ ] Implement expense reporting
-- [ ] Build expense management UI
-  - [ ] Create expense entry interface
-  - [ ] Implement expense categorization
-  - [ ] Build expense reporting and analytics
+### Expense Management UI
+- [ ] Create expense entry interface
+- [ ] Implement expense categorization UI
+- [ ] Build expense reporting and analytics UI
 
-### Financial Dashboards
-- [ ] Implement financial reporting
-  - [ ] Create sales and revenue reports
-  - [ ] Build expense reports
-  - [ ] Implement profit/loss calculations
-- [ ] Create financial dashboards
-  - [ ] Design financial overview dashboard
-  - [ ] Build key performance indicators
-  - [ ] Implement trend analysis
+### Financial Dashboards UI
+- [ ] Design financial overview dashboard
+- [ ] Build key performance indicators UI
+- [ ] Implement trend analysis UI
 
-## Phase 5: Specialized Features
+## Phase 5: Specialized UI Features
 
-### Missing Item Management
-- [ ] Implement missing item system
-  - [ ] Create missing item schema
-  - [ ] Build investigation workflow
-  - [ ] Implement resolution tracking
-- [ ] Build missing item management UI
-  - [ ] Create missing item reporting interface
-  - [ ] Implement investigation status tracking
-  - [ ] Build resolution documentation
+### Missing Item Management UI
+- [ ] Create missing item reporting interface
+- [ ] Implement investigation status tracking UI
+- [ ] Build resolution documentation UI
 
-### Non-scannable Item Handling
-- [ ] Create alternative identification system
-  - [ ] Design manual entry process
-  - [ ] Implement alternative identifiers
-  - [ ] Build tracking system
-- [ ] Implement non-scannable item UI
-  - [ ] Create manual entry interface
-  - [ ] Build alternative ID generation
-  - [ ] Implement verification process
+### Non-scannable Item Handling UI
+- [ ] Create manual entry interface
+- [ ] Build alternative ID generation UI
+- [ ] Implement verification process UI
 
-### Notification System
-- [ ] Create notification framework
-  - [ ] Design notification schema and types
-  - [ ] Implement notification triggers
-  - [ ] Build notification preferences
-- [ ] Implement notification UI
-  - [ ] Create notification center
-  - [ ] Build alert display components
-  - [ ] Implement reminder system
+### Notification Center UI
+- [ ] Create notification center
+- [ ] Build alert display components
+- [ ] Implement reminder system UI
 
-### Export and Reporting
-- [ ] Implement export capabilities
-  - [ ] Build PDF export functionality
-  - [ ] Create CSV/Excel export features
-  - [ ] Implement report template system
-- [ ] Create business intelligence dashboards
-  - [ ] Build inventory status reports
-  - [ ] Create sales analytics dashboards
-  - [ ] Implement custom report builder
+### Reporting UI
+- [ ] Build inventory status reports UI
+- [ ] Create sales analytics dashboards UI
+- [ ] Implement custom report builder UI
 
-## Phase 6: System Completion and Documentation
+## Phase 6: UI Polish and Documentation
 
-### System Optimization
-- [ ] Optimize application performance
-  - [ ] Improve database query performance
-  - [ ] Optimize component rendering
-  - [ ] Implement data loading improvements
-  - [ ] Enhance offline capabilities
-- [ ] Enhance security measures
-  - [ ] Conduct security review
-  - [ ] Implement additional protections
-  - [ ] Create security documentation
-
-### Documentation and Polish
-- [ ] Create documentation
-  - [ ] Build user documentation
-  - [ ] Create admin documentation
-  - [ ] Prepare training materials
 - [ ] Final UI/UX polish
   - [ ] Refine user interface elements
   - [ ] Improve accessibility features
   - [ ] Implement final design touches
-
-## Phase 7: Deployment and Launch
-
-### Production Deployment
-- [ ] Prepare production environment
-  - [ ] Configure production server
-  - [ ] Set up monitoring and logging
-  - [ ] Implement backup schedule
-- [ ] Deploy application
-  - [ ] Package frontend and backend
-  - [ ] Deploy to production server
-  - [ ] Verify deployment functionality
-- [ ] Launch activities
-  - [ ] Conduct user training
-  - [ ] Initialize production data
-  - [ ] Monitor system performance
-
-## Technical Notes
-
-### Implementation Principles
-2. **Progressive Enhancement**: Add features incrementally on a solid foundation
-4. **User-Centered Design**: Focus on usability and clear workflows
-5. **Performance Optimization**: Fast loading and responsive experience
-
-### Technology Integration Points
-1. **PocketBase + SvelteKit**: Direct API integration through PocketBase JS SDK
-2. **Barcode System**: Integration with barcode libraries and WebRTC for scanning
-3. **PDF Generation**: Integration with PDF generation library for invoices and reports
-4. **i18n System**: Type-safe translations with static analysis
-5. **Authentication**: PocketBase authentication with custom role-based access control
+- [ ] Create user and admin UI documentation
