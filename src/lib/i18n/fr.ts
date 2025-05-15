@@ -24,5 +24,10 @@ export default {
   'auth.register.button': 'Créer',
   'auth.register.loading': 'Création...',
   'auth.register.success': 'Utilisateur créé avec succès.',
-  'auth.register.error': 'Échec de la création de l’utilisateur.'
+  'auth.register.error': 'Échec de la création de l’utilisateur.',
+  // Home page translations
+  'home.title': 'Gestion d\'inventaire de bijoux',
+  'home.subtitle': 'Gérez efficacement votre inventaire de bijoux dans plusieurs magasins.',
+  'home.cta.login': 'Se connecter',
+  'home.cta.register': 'Créer un compte'
 } as const;
