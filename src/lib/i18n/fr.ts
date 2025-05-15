@@ -11,5 +11,18 @@ export default {
   'auth.login.forgotPassword': 'Mot de passe oublié?',
   'auth.login.register': 'Créer un compte',
   'auth.login.error': 'Échec de la connexion. Vérifiez vos identifiants.',
-  'auth.logout.message': 'Déconnexion en cours...'
+  'auth.logout.message': 'Déconnexion en cours...',
+  'auth.register.title': 'Créer un utilisateur',
+  'auth.register.nameLabel': 'Nom',
+  'auth.register.namePlaceholder': 'Nom complet',
+  'auth.register.emailLabel': 'Email',
+  'auth.register.emailPlaceholder': 'exemple@domaine.com',
+  'auth.register.passwordLabel': 'Mot de passe',
+  'auth.register.passwordPlaceholder': '••••••••',
+  'auth.register.confirmLabel': 'Confirmer le mot de passe',
+  'auth.register.confirmPlaceholder': '••••••••',
+  'auth.register.button': 'Créer',
+  'auth.register.loading': 'Création...',
+  'auth.register.success': 'Utilisateur créé avec succès.',
+  'auth.register.error': 'Échec de la création de l’utilisateur.'
 } as const;

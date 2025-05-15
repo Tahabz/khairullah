@@ -103,3 +103,20 @@ export async function confirmPasswordReset(
         return { success: false, error };
     }
 }
+
+// Create user as admin (superuser only) without logging in
+export async function adminCreateUser(
+    email: string,
+    password: string,
+    passwordConfirm: string,
+    name: string
+) {
+    try {
+        const data = { email, password, passwordConfirm, name };
+        const newUser = await pb.collection(Collections.Users).create(data);
+        return { success: true, user: newUser as unknown as UsersRecord };
+    } catch (error) {
+        console.error('Admin create user failed:', error);
+        return { success: false, error };
+    }
+}

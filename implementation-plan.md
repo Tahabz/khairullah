@@ -7,13 +7,9 @@ This document outlines the detailed step-by-step implementation plan for the jew
 ### Authentication and User Management
 - [x] Set up authentication using PocketBase client sdk
 - [ ] Build user management UI
-  - [ ] Create login/logout pages
-  - [ ] Build user registration for admin
+  - [x] Create login/logout pages
+  - [x] Build user registration for admin
   - [ ] Implement password reset functionality
-- [ ] Set up role-based access control
-  - [ ] Create Admin role with full permissions
-  - [ ] Create User role with limited permissions
-  - [ ] Implement permission checks in frontend
 
 ### Internationalization and Store Management
 - [ ] Set up internationalization system
