@@ -10,6 +10,7 @@ This document outlines the detailed step-by-step implementation plan for the jew
   - [x] Create login/logout pages
   - [x] Build user registration for admin
   - [ ] Implement password reset functionality
+  - [ ] Implement necessary auth redirection/protection logic
 
 ### Internationalization and Store Management
 - [ ] Set up internationalization system
