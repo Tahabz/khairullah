@@ -7,15 +7,13 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			// Output directory where static files will be generated
-			fallback: 'index.html', // Important for SPA mode - all routes redirect to index.html
-			pages: 'build', // Output directory for the built pages
-			assets: 'build', // Output directory for assets
-			precompress: false // Set to true if you want to precompress files
+			fallback: 'index.html',
+			strict: false
 		}),
-		// Disable SSR entirely
-		prerender: { default: false }
-	}
+		prerender: {
+			entries: []
+		}
+	},
 };
 
 export default config;
