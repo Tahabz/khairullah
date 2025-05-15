@@ -81,7 +81,7 @@ export function logout() {
 // Password reset request
 export async function requestPasswordReset(email: string) {
     try {
-        await pb.collection('users').requestPasswordReset(email);
+        await pb.collection(Collections.Superusers).requestPasswordReset(email);
         return { success: true };
     } catch (error) {
         console.error('Password reset request failed:', error);
@@ -96,7 +96,7 @@ export async function confirmPasswordReset(
     passwordConfirm: string
 ) {
     try {
-        await pb.collection('users').confirmPasswordReset(token, password, passwordConfirm);
+        await pb.collection(Collections.Superusers).confirmPasswordReset(token, password, passwordConfirm);
         return { success: true };
     } catch (error) {
         console.error('Password reset confirmation failed:', error);

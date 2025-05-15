@@ -13,10 +13,6 @@ This document outlines the detailed step-by-step implementation plan for the jew
   - [ ] Implement necessary auth redirection/protection logic
 
 ### Internationalization and Store Management
-- [ ] Set up internationalization system
-  - [ ] Create type-safe translation structure
-  - [ ] Set up French as default language
-  - [ ] Implement translation loader
 - [ ] Implement store management UI
   - [ ] Build store CRUD operations UI
   - [ ] Implement store-user relationship UI
