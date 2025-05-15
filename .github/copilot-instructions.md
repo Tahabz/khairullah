@@ -139,11 +139,12 @@ This project is a jewelry inventory management system designed for efficient inv
 * Mutate the PocketBase by creating new migrations using `go run . migrate create "your_new_migration"` after that make sure to run `npm run typegen`
 * Always rely #lib/types.ts for types and interfaces and how to interface with PocketBase and
 * avoid creating custom types, rely on type inference as much as possible
+* make sure you're always using the exact same version of the used dependencies
 
 
 ## Technology Stack
 * **Frontend**
-    * SvelteKit (Svelte 5) without server-side rendering
+    * SvelteKit(2.16) (and Svelte 5) without server-side rendering
     * DaisyUI as UI component library on top of Tailwind CSS
     * Modern CSS with responsive design principles
     * Progressive Web App (PWA) capabilities
