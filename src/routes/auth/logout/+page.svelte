@@ -12,9 +12,12 @@
 </script>
 
 <div class="hero min-h-screen bg-base-200">
-  <div class="hero-content text-center">
-    <div>
-      <h2 class="text-2xl font-bold">{t('auth.logout.message')}</h2>
+  <div class="hero-content flex-col">
+    <div class="card w-80 bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <span class="loading loading-lg"></span>
+        <h2 class="card-title mt-4">{t('auth.logout.message')}</h2>
+      </div>
     </div>
   </div>
 </div>

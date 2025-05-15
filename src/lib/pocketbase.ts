@@ -1,6 +1,7 @@
 import PocketBase from 'pocketbase';
 import { writable } from 'svelte/store';
-import type { UsersRecord, TypedPocketBase } from './types';
+import type { UsersRecord, SuperusersRecord, TypedPocketBase } from './types';
+import { Collections } from './types';
 
 // Create the PocketBase instance
 // In development, PocketBase runs on port 8090 by default
@@ -9,14 +10,14 @@ const baseUrl = import.meta.env.DEV ? 'http://127.0.0.1:8090' : window.location.
 export const pb = new PocketBase(baseUrl) as TypedPocketBase;
 
 // Create auth store to track authentication state
-export const currentUser = writable<UsersRecord | null>(null);
+export const currentUser = writable<UsersRecord | SuperusersRecord | null>(null);
 export const isAuthenticated = writable<boolean>(false);
 
 // Initialize the auth store from any existing auth data
 export function initializeAuth() {
     // Check if the user is already logged in
     if (pb.authStore.isValid) {
-        const authData = pb.authStore.record as unknown as UsersRecord;
+        const authData = pb.authStore.record as unknown as UsersRecord | SuperusersRecord;
         if (authData) {
             currentUser.set(authData);
             isAuthenticated.set(true);
@@ -26,17 +27,25 @@ export function initializeAuth() {
     // Add a listener for auth state changes
     pb.authStore.onChange((token, model) => {
         isAuthenticated.set(pb.authStore.isValid);
-        currentUser.set(model ? model as unknown as UsersRecord : null);
+        currentUser.set(model ? model as unknown as UsersRecord | SuperusersRecord : null);
     });
 }
 
 // Login function
 export async function login(email: string, password: string) {
     try {
-        const authData = await pb.collection('users').authWithPassword(email, password);
-        currentUser.set(authData.record as UsersRecord);
+        let authData;
+        // try normal user login
+        try {
+            authData = await pb.collection(Collections.Users).authWithPassword(email, password);
+        } catch {
+            // fallback to superuser login
+            authData = await pb.collection(Collections.Superusers).authWithPassword(email, password);
+        }
+        const user = authData.record as UsersRecord | SuperusersRecord;
+        currentUser.set(user);
         isAuthenticated.set(true);
-        return { success: true, user: authData.record };
+        return { success: true, user };
     } catch (error) {
         console.error('Login failed:', error);
         return { success: false, error };
