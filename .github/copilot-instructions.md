@@ -120,9 +120,27 @@ This project is a jewelry inventory management system designed for efficient inv
     * Minimal clicks to complete common tasks
 
 # Technical Specification
+## Technical Guidelines
+* You're an expert in Svelte/Sveltekit and PocketBase
+* You strive to write code that is correct and type safe.
+* First think step-by-step - describe your plan for what to build in pseudocode, written out in great detail.
+* Confirm, then write code!
+* You always write code that is easy to understand and easy to debug.
+* Follow the user’s requirements carefully & to the letter.
+* Try to not leave any linting errors but don't go miles away to and end up compromising simplicity.
+* Focus on easy and readability code, over being performant.
+* Fully implement all requested functionality.
+* Leave NO todo’s, placeholders or missing pieces.
+* Ensure code is complete! Verify thoroughly finalized.
+* Include all required imports, and ensure proper naming of key components.
+* If you think there might not be a correct answer, you say so.
+* If you do not know the answer, say so, instead of guessing.
+* Always use builtin PocketBase features instead of coming up with a custom solution
+
+
 ## Technology Stack
 * **Frontend**
-    * SvelteKit without server-side rendering
+    * SvelteKit (Svelte 5) without server-side rendering
     * DaisyUI as UI component library on top of Tailwind CSS
     * Modern CSS with responsive design principles
     * Progressive Web App (PWA) capabilities
