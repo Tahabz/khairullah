@@ -140,6 +140,11 @@ This project is a jewelry inventory management system designed for efficient inv
 * Always rely #lib/types.ts for types and interfaces and how to interface with PocketBase and
 * avoid creating custom types, rely on type inference as much as possible
 * make sure you're always using the exact same version of the used dependencies
+* Avoid using custom tailwind designs and layouts, always rely on DaisyUI
+* Use DaisyUI components for all UI elements, including buttons, forms, and modals
+* Use DaisyUI themes for consistent styling across the application
+* Use DaisyUI to make beautiful and responsive UIs
+* Don't include content directly, always use i18n for translations and make sure to use the correct keys
 
 
 ## Technology Stack

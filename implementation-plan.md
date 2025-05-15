@@ -228,41 +228,8 @@ This document outlines the detailed step-by-step implementation plan for the jew
 
 ## Technical Notes
 
-### Frontend Structure
-```
-src/
-  lib/
-    components/
-      ui/            # Base UI components
-      inventory/     # Inventory components
-      sales/         # Sales components
-      finance/       # Financial components
-      admin/         # Admin components
-    stores/          # Svelte stores
-    utils/           # Utility functions
-    i18n/            # Internationalization
-    types/           # TypeScript types
-    api/             # PocketBase API wrappers
-  routes/            # SvelteKit routes
-```
-
-### PocketBase Collections
-- users
-- stores
-- inventory_items
-- suppliers
-- clients
-- sales
-- orders
-- invoices
-- expenses
-- payments
-- missing_items
-
 ### Implementation Principles
-1. **Domain-First Development**: Complete vertical slices of functionality
 2. **Progressive Enhancement**: Add features incrementally on a solid foundation
-3. **API-First Development**: Define backend endpoints before implementing UI
 4. **User-Centered Design**: Focus on usability and clear workflows
 5. **Performance Optimization**: Fast loading and responsive experience
 
