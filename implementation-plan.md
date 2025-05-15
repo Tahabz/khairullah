@@ -5,10 +5,7 @@ This document outlines the detailed step-by-step implementation plan for the jew
 ## Phase 1: Authentication and User Management
 
 ### Authentication and User Management
-- [ ] Implement PocketBase authentication
-  - [ ] Set up user collection with role support
-  - [ ] Create authentication API endpoints
-  - [ ] Implement username/password authentication flow
+- [ ] Set up authentication using PocketBase client sdk
 - [ ] Build user management UI
   - [ ] Create login/logout components
   - [ ] Build user registration for admin
